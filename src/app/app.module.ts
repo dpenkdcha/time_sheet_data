@@ -7,11 +7,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EntryComponent } from './entry/entry.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ExchangeComponent } from './exchange/exchange.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EntryComponent    
+    EntryComponent,
+    ExchangeComponent    
   ],
   imports: [
     BrowserModule,

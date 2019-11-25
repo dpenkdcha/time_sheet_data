@@ -1,0 +1,36 @@
+<p>exchange works!</p>
+<div class="row">
+    <div class="col-md-12">
+      <form #f="ngForm" (ngSubmit)="onSubmitExchange()">
+        <div class="row">
+          <div class="col-sm-3 form-group">
+            <label for="accessToken">accessToken</label>
+            <input type="text" id="accessToken" name="accessToken" [(ngModel)]=model.accessToken class="form-control">
+          </div>
+          <div class="col-sm-3 form-group">
+            <label for="ltpaToken">ltpaToken</label>
+            <input type="text" id="ltpaToken" name="ltpaToken" [(ngModel)]=model.ltpaToken class="form-control">
+          </div>
+          <div class="col-sm-3 form-group">
+            <label for="email">email</label>
+            <input type="text" id="email" name="email" [(ngModel)]=model.email class="form-control">
+          </div>
+          <div class="col-sm-3 form-group">
+            <label for="toDate">toDate</label>
+            <input type="text" id="toDate" name="toDate" [(ngModel)]=model.toDate class="form-control">
+          </div>
+          <div class="col-sm-3 form-group">
+            <label for="fromDate">fromDate</label>
+            <input type="text" id="fromDate" name="fromDate" [(ngModel)]=model.fromDate class="form-control">
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-sm-3 form-group">
+            <button class="btn btn-success" type="submit">Submit</button>
+          </div>
+        </div>
+  
+      </form>
+    </div>
+  </div>
